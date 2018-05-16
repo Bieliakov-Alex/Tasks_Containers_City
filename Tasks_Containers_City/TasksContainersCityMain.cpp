@@ -41,7 +41,7 @@ int main()
 	{
 		if (connections[i] > 3)
 		{
-			cout << i << endl;
+			cout << i+1 << endl;
 		}
 	}
 
