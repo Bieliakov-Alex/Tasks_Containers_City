@@ -28,6 +28,8 @@ int main()
 		{
 			break;
 		}
+		i--;
+		j--;
 		if (i < N && j < N)
 		{
 			connections[i]++;
@@ -35,11 +37,11 @@ int main()
 		}
 	}
 	//Выводим на экран города, у которых количество связанных городов больше 3
-	for (auto city : connections)
+	for (int i = 0; i < N; i++)
 	{
-		if (city > 3)
+		if (connections[i] > 3)
 		{
-			cout << city << endl;
+			cout << i << endl;
 		}
 	}
 
